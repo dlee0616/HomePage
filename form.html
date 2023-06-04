@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+    <Title>
+        Piano students registration 
+    </Title>
+</head>
+<script src = "assign13.js" ></script>
+<link rel = "stylesheet" href = "marklet.css">
+
+<Header>
+    Piano Registration Form
+</Header>
+
+<body>
+
+<form id = "pianostudents" action="assign13.php" method = "GET" target = "results">
+
+    <h1>Performance Type:</h1>
+
+
+<select name="performance" id="performance" onchange="duet()">
+  <option value="solo">Solo</option>
+  <option value="duet">duet</option>
+  <option value="concerto">concerto</option>
+  
+</select>
+
+<Br>
+    <h2>Student Information:</h2>
+
+    <label for = "first_name">First Name</label>
+    <input type = "textbox" name = "first_name" id ="first_name" required>
+
+<p class = "error" id = "fname_error"></p>
+    
+<br>
+    
+    <label for = "LastName">Last Name</label>
+    <input type = "textbox" name = "last_name" id = "last_name" required>
+
+    <p class = "error" id = "lname_error"></p>
+    
+<br>
+    
+    <label for = "Student_id">Student Id</label> 
+    <input type = "textbox" name = "student_id" id = "student_id"required>
+    
+<p class = "error" id = "id_error"></p>
+    
+<br>
+<br>
+    <div id = "duet">
+    
+    <h3>Student Information of 2nd student in Duet:</h3>
+    
+    <label for = "first_name#2">First Name of 2nd in Duet </label>
+    <input type = "textbox" name = "first_name_2" id ="first_name_2" >
+
+<p class = "error" id = "fname_error"></p>
+    
+<br>
+    
+    <label for = "LastName">Last Name of 2nd student in Duet</label>
+    <input type = "textbox" name = "last_name_2" id = "Last_name_2" >
+
+<p class = "error" id = "lname_error"></p>
+    
+<br>
+    
+    <label for = "Student_id">Student Id of 2nd student in Duet</label> 
+    <input type = "textbox" name = "student_id_2" id = "student_id_2">
+    
+<p class = "error" id = "id_error"></p>
+    </div>
+<br>
+
+    <h4>Skill Level:</h4>
+
+    <input type="radio" id="beginner" name= "skill" value="beginner" required>
+    <label for="beginner">Beginner</label><br>
+    <input type="radio" id="intermediate" name="skill" value="intermediate"required>
+    <label for="intermediate">Intermediate</label><br>
+    <input type="radio" id="pre_advanced" name="skill" value="pre_advanced"required>
+    <label for="pre_advanced">Pre_advanced</label><br>
+    <input type="radio" id="advanced" name="skill" value="advanced"required>
+    <label for="advanced">Advanced</label>
+    </radio>
+    <br>
+    <Br>
+
+    <h5>Instrument:</h5>    
+    
+    <select name="instrument" id="instrument">
+        <option value="piano">piano</option>
+        <option value="Voice">voice</option>
+        <option value="string">string</option>
+        <option value="organ">organ</option>
+        <option value="other">other</option>
+            
+    </select>
+
+
+    <br>
+    <br>
+    <h6>Location:</h6>
+    <br>
+    <label for = "location">Location</label>
+    <input type = "textbox" name = "location" id = "location" >
+    <label for = "room">Room#</label>
+    <input type = "textbox" name = "room" id = "room" >
+    <p class = "error" id = "error"></p>
+    <p>Time:<p>
+    <select name="time_slot" id="time_slot">
+        <option value="8am">8 AM</option>
+        <option value="9am">9 AM</option>
+        <option value="10am">10 AM</option>
+        <option value="11am">11 AM</option>
+        <option value="12pm">12 PM</option>
+        <option value="1pm">1 PM</option>
+        <option value="2pm">2 PM</option>
+            
+    </select>
+
+    <Br>
+    <br>
+
+    <button type = "submit" name = "register">Register Student</button>
+    <br>
+    <input type="reset" value="Clear" name="clear" >
+    
+</form>
+    
+<br>
+    
+<iframe name = "results"> 
+
+</iframe> 
+
+
+</body>
+</html>
