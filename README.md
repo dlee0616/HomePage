@@ -19,7 +19,6 @@ CSS
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 
 - [w3schools](https://www.w3schools.com/php/)
 - [educative](https://www.educative.io/answers/how-to-add-an-id-to-element-in-javascript)
